@@ -9,8 +9,8 @@ module.exports = {
   },
   plugins: [
     new InjectManifest({
-      swSrc: './service-worker.js',
-      swDest: 'service-worker.js',
+      swSrc: './sw.js',
+      swDest: 'sw.js',
     }),
   ],
 };

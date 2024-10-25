@@ -5,7 +5,7 @@ fetch('https://reqres.in/api/users')
 
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('../service-worker.js')
+      navigator.serviceWorker.register('../sw.js')
         .then((reg) => {
           console.log('Service worker registered -->', reg);
         }, (err) => {
