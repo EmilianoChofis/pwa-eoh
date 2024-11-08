@@ -1,3 +1,8 @@
+
+function init() {
+
+}
+
 fetch('https://reqres.in/api/users')
   .then(response => response.json())
   .then(data => {
@@ -5,7 +10,7 @@ fetch('https://reqres.in/api/users')
 
 
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('../sw.js')
+      navigator.serviceWorker.register('../service-worker.js')
         .then((reg) => {
           console.log('Service worker registered -->', reg);
         }, (err) => {

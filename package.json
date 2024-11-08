@@ -1,15 +1,16 @@
 {
-  "name": "pwa-eoh",
+  "name": "pwa-node",
   "version": "1.0.0",
-  "description": "soy una descripcion",
-  "main": "index.js",
+  "description": "",
+  "main": "./public/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "chombo_eoh",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.0",
+    "pwa-node": "file:",
     "workbox-webpack-plugin": "^7.1.0"
   },
   "devDependencies": {
