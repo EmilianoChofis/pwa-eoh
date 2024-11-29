@@ -11,6 +11,12 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
+app.get('/api/data', (req, res) => {
+  // Este endpoint puede devolver datos de la base de datos
+  res.json({ message: 'Prueba de mensaje para PouchDB Emiliano Ortiz' });
+});
+
 app.listen(httpPort, function () {
   console.log(`Listening on port ${httpPort}!`)
 })
+
